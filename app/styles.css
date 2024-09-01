@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+.cabin-light{
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.cabin-medium{
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -25,7 +43,7 @@
   width: 100%;
   flex-direction: row;
   justify-content: end;
-  padding: 40px 40px;
+  padding: 20px 2ch;
 }
 
 .swiper-pagination > .swiper-pagination-bullet {
@@ -37,36 +55,3 @@
   background-color: white;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  position: relative;
-  border-radius: 30px;
-  border: 2px solid white;
-  padding: 20px 50px;
-  color: white !important;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.swiper-button-next::before,
-.swiper-button-prev::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.swiper-button-next::before {
-  content: "next"; 
-}
-
-.swiper-button-prev::before {
-  content: "prev"; 
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: ""; 
-  display: none; 
-}

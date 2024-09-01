@@ -1,18 +1,49 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 function Navbar() {
   return (
-    <div className="flex w-full justify-between text-black items-center  py-5 px-16 bg-[#FFFFFF4D] z-10 ">
-      <Image src="/logo.png" width={150} height={50} alt="" />
-      <div className="flex gap-4 2 text-sm justify-between items-center">
-        <div className="w-fit h-fit border-black border-2 rounded-full px-4 py-2 hover:border-[#0799B6] transition-all">Home</div>
-        <div className="w-fit h-fit border-black border-2 rounded-full px-4 py-2 hover:border-[#0799B6] transition-all">Offers</div>
-        <div className="w-fit h-fit border-black border-2 rounded-full px-4 py-2 hover:border-[#0799B6] transition-all">About</div>
-        <div className="w-fit h-fit  rounded-full px-8 py-3 text-white hover:border-[#0799B6] transition-all bg-gradient-to-r from-[#0799B6] to-[#09DDDD]">Contact</div>
+    <div>
+      <div className="flex h-[4vh] w-full items-center  justify-center bg-[#1D1D1D] ">
+        <h1 className="text-white uppercase tracking-wide">Onam Offers Available rn</h1>
+      </div>
+    <div className="z-10 flex w-full items-center justify-between  bg-[#FFFFFF4D] px-16 py-5 text-black ">
+      <Image src="/logo.png" width={100} height={50} alt="" />
+      <div className="flex items-center justify-between gap-8 text-[14px]">
+        <div className="group relative inline-block hover:cursor-pointer">
+          <div className=" font-sans uppercase tracking-wider text-[#1c1c1c] transition-all">
+            Home
+          </div>
+          <span className="absolute left-0 top-6 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+        </div>
+        <div className="group relative inline-block hover:cursor-pointer">
+          <div className=" font-sans uppercase tracking-wider text-[#1c1c1c] transition-all">
+            Collections
+          </div>
+          <span className="absolute left-0 top-6 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+        </div>
+        <div className="group relative inline-block hover:cursor-pointer">
+          <div className=" font-sans uppercase tracking-wider text-[#1c1c1c] transition-all">
+            Catalogue
+          </div>
+          <span className="absolute left-0 top-6 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+        </div>
+        <div className="group relative inline-block hover:cursor-pointer">
+          <div className=" font-sans uppercase tracking-wider text-[#1c1c1c] transition-all">
+            About Us
+          </div>
+          <span className="absolute left-0 top-6 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+        </div>
+        <div className="group relative inline-block hover:cursor-pointer">
+          <div className=" font-sans uppercase tracking-wider text-[#1c1c1c] transition-all">
+            Contact
+          </div>
+          <span className="absolute left-0 top-6 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+        </div>
       </div>
     </div>
-  )
+      </div>
+  );
 }
- 
-export default Navbar
+
+export default Navbar;
