@@ -12,10 +12,11 @@ import "swiper/css/effect-creative";
 import { clashGrotesk } from "./lib/fonts";
 import "./styles.css";
 import Carousal from "./components/Carousal";
+import { CounterSection } from "./components/TrustedSection";
 
 export default function Home() {
   return (
-    <main className="flex h-full min-h-screen w-full flex-col bg-white">
+    <main className="flex h-full min-h-screen w-full flex-col bg-[#efefef]">
       <Navbar />
 
       <section id="home-carousal">
@@ -28,6 +29,8 @@ export default function Home() {
       >
         <ItemCollection />
       </section>
+      
+      <CounterSection />
     </main>
   );
 }
