@@ -1,15 +1,24 @@
 import { useState } from 'react';
 import Image from 'next/image'; // Assuming you're using Next.js
+import { ChevronRight } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const menuItems = [
+    { label: 'HOME', hasSubmenu: false },
+    { label: 'COLLECTIONS', hasSubmenu: true },
+    { label: 'FURNITURE', hasSubmenu: true },
+    { label: 'PROJECTS', hasSubmenu: false },
+    { label: 'CATALOGUE', hasSubmenu: true },
+    { label: 'ABOUT US', hasSubmenu: false },
+    { label: 'CONTACT', hasSubmenu: false },
+  ];
   return (
     <div>
       <div className="flex h-[4vh] w-full items-center justify-center bg-[#1D1D1D]">
         <h1 className="uppercase tracking-wide text-white">Onam Offers Available rn</h1>
       </div>
-      <div className="z-10 flex w-full items-center justify-between bg-[#FFFFFF4D] px-16 py-5 text-black">
+      <div className="z-10 flex w-full items-center justify-between bg-[#FFFFFF4D] px-4 md:px-16 py-5 text-black">
         <Image src="/logo.png" width={100} height={50} alt="Logo" />
         <div className="hidden items-center justify-between gap-8 text-[14px] md:flex">
           <MenuItem label="Home" />
@@ -30,26 +39,26 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <>
-          <div className="fixed inset-0 bg-black opacity-50 z-20" onClick={() => setIsMenuOpen(false)}></div>
-          <div className="fixed top-0 right-0 w-3/4 max-w-[250px] h-full bg-white shadow-lg transition-transform transform z-40 p-5 pt-10">
+        <div className="fixed inset-0 bg-white z-50">
+          <div className="flex items-center justify-between p-4 border-b">
             <button 
               onClick={() => setIsMenuOpen(false)} 
-              className="absolute top-5 right-5 z-40 text-black"
+              className="text-black focus:outline-none"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
-            <div className="flex flex-col space-y-4 text-left">
-              <MenuItem label="Home" />
-              <MenuItem label="Collections" />
-              <MenuItem label="Catalogue" />
-              <MenuItem label="About Us" />
-              <MenuItem label="Contact" />
-            </div>
           </div>
-        </>
+          <div className="p-4">
+            {menuItems.map((item, index) => (
+              <div key={index} className="py-4 border-b flex justify-between items-center text-black">
+                <span>{item.label}</span>
+                {item.hasSubmenu && <ChevronRight size={20} />}
+              </div>
+            ))}
+          </div>
+        </div>
       )}
     </div>
   );
