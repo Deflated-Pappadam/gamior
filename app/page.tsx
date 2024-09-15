@@ -31,17 +31,19 @@ export default function Home() {
         creativeEffect={{
           prev: {
             shadow: true,
-            opacity: 0
+            translate: ["-20%", 0, -1],
+            opacity: 0.5
           },
           next: {
             shadow: true,
-            opacity: 0,
-            scale: 80
+            translate: ["20%", 0, -1],
+            opacity: 0.5,
+            scale: 0.9
           }
         }}
         className="mySwiper max-h-[86vh]"
-        pagination={{ clickable: true }} // pagination enabled
-        modules={[Autoplay, Pagination, Navigation, EffectFade, EffectCreative]}
+        pagination={{ clickable: true }}
+        modules={[Autoplay, Pagination, Navigation, EffectCreative]}
       >
         <SwiperSlide className="relative">
           <Image
@@ -93,9 +95,9 @@ export default function Home() {
         <h1 className="cabin-medium text-[26px] uppercase tracking-widest text-[#1c1c1c]">
           Onam Collection
         </h1>
-        <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-4 px-10">
+        <div className="grid w-full grid-cols-2 gap-4 px-10 md:grid-cols-4">
           <div className="grid gap-4">
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-full max-w-full rounded-lg object-fill"
@@ -103,7 +105,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -111,7 +113,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -121,7 +123,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-4">
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -129,7 +131,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -137,7 +139,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -147,7 +149,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-4">
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -155,7 +157,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -163,7 +165,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -173,7 +175,7 @@ export default function Home() {
             </div>
           </div>
           <div className="grid gap-4">
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -181,7 +183,7 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
                 fill
                 className="h-auto max-w-full rounded-lg"
@@ -189,9 +191,9 @@ export default function Home() {
                 alt=""
               />
             </div>
-            <div className="flex items-center justify-center bg-white rounded-md relative">
+            <div className="relative flex items-center justify-center rounded-md bg-white">
               <Image
-              fill
+                fill
                 className="h-auto max-w-full rounded-lg"
                 src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
                 alt=""
