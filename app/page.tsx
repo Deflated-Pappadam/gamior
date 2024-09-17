@@ -14,6 +14,7 @@ import "./styles.css";
 import Carousal from "./components/Carousal";
 import { CounterSection } from "./components/TrustedSection";
 import Collection from "./components/Collection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -29,7 +30,6 @@ export default function Home() {
         className="flex  w-full flex-col items-center justify-center bg-[#efefef]"
       >
         <ItemCollection />
-        
       </section>
       <section
         id="TrustedSection"
@@ -38,8 +38,10 @@ export default function Home() {
         <CounterSection />
       </section>
       <section id="collection" className="">
-<Collection/>
+        <Collection />
       </section>
+
+      <Footer/>
     </main>
   );
 }
