@@ -26,7 +26,7 @@ export default function Home() {
 
       <section
         id="exclusive-collections"
-        className="flex min-h-screen w-full flex-col items-center justify-center bg-[#efefef]"
+        className="flex  w-full flex-col items-center justify-center bg-[#efefef]"
       >
         <ItemCollection />
         
