@@ -20,7 +20,7 @@ function Footer() {
         </div>
 
         {/* Footer Links */}
-        <div className='flex items-center justify-between'>
+        <div className='flex md:flex-row flex-col items-center justify-between'>
           {/* <div>
             <h3 className='font-bold mb-4'>NEWSLETTER</h3>
             <p className='mb-4'>Sign up to our newsletter to receive exclusive offers.</p>
@@ -35,7 +35,7 @@ function Footer() {
               </button>
             </div>
           </div> */}
-          <div>
+          <div className='md:flex hidden flex-col'>
             <h3 className='font-bold mb-4'>FOOTER MENU</h3>
             <ul className=''>
               {["home","collection","exclusive","socials"].map((item, index) => (
