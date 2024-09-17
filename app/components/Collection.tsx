@@ -4,7 +4,7 @@ import React from "react";
 function Collection() {
   const items = [
     { src: "/item.jpg", alt: "Side table with blue rabbit sculpture", name: "Bedroom" },
-    { src: "/item.jpg", alt: "Dining area with round table and chairs", name: "Wadrobe" },
+    { src: "/item.jpg", alt: "Dining area with round table and chairs", name: "Wardrobe" },
     { src: "/item.jpg", alt: "Close-up of blue chairs and rug", name: "Balcony" },
     {
       src: "/item.jpg",
