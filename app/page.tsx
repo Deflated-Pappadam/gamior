@@ -13,6 +13,7 @@ import { clashGrotesk } from "./lib/fonts";
 import "./styles.css";
 import Carousal from "./components/Carousal";
 import { CounterSection } from "./components/TrustedSection";
+import Collection from "./components/Collection";
 
 export default function Home() {
   return (
@@ -28,9 +29,17 @@ export default function Home() {
         className="flex min-h-screen w-full flex-col items-center justify-center bg-[#efefef]"
       >
         <ItemCollection />
+        
       </section>
-      
-      <CounterSection />
+      <section
+        id="TrustedSection"
+        className="flex w-full flex-col items-center justify-center bg-[#efefef]"
+      >
+        <CounterSection />
+      </section>
+      <section id="collection" className="">
+<Collection/>
+      </section>
     </main>
   );
 }

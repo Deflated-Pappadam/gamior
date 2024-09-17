@@ -38,18 +38,18 @@ const useCounter = (end: number, duration = 2000) => {
     const furnishingBrands = useCounter(120);
   
     return (
-      <section className="flex w-full justify-around py-16 bg-[#efefef] text-black">
+      <section className="flex  gap-8 w-full justify-around py-16 bg-[#efefef] text-black">
         <div className="text-center">
-          <h2 className={`${clashGrotesk.className} text-6xl font-bold`}>{furnitureBrands}+</h2>
-          <p className="mt-2 text-lg">FURNITURE BRANDS</p>
+          <h2 className={`${clashGrotesk.className} md:text-6xl text-3xl font-semibold`}>{furnitureBrands}+</h2>
+          <p className="mt-2 md:text-lg text-sm">FURNITURE BRANDS</p>
         </div>
         <div className="text-center">
-          <h2 className={`${clashGrotesk.className} text-6xl font-bold`}>{lightingBrands}+</h2>
-          <p className="mt-2 text-lg">LIGHTING BRANDS</p>
+          <h2 className={`${clashGrotesk.className} md:text-6xl text-3xl font-semibold`}>{lightingBrands}+</h2>
+          <p className="mt-2 md:text-lg text-sm">LIGHTING BRANDS</p>
         </div>
         <div className="text-center">
-          <h2 className={`${clashGrotesk.className} text-6xl font-bold`}>{furnishingBrands}+</h2>
-          <p className="mt-2 text-lg">FURNISHING BRANDS</p>
+          <h2 className={`${clashGrotesk.className} md:text-6xl text-3xl font-semibold`}>{furnishingBrands}+</h2>
+          <p className="mt-2 md:text-lg text-sm">FURNISHING BRANDS</p>
         </div>
       </section>
     );
