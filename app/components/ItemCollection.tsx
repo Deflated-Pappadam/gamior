@@ -49,68 +49,69 @@ const ItemCollection = () => {
 
   const items = [
     {
-      src: "/item.jpg",
-      alt: "Side table with blue rabbit sculpture",
-      shape: "rounded-[20px] md:rounded-tr-[142px] md:rounded-bl-[195px]",
-      name: "Blue Rabbit Side Table",
-      cost: "299.99"
+      src: "/collections/BATHROOM 1.jpg",
+      alt: "Bathroom setup with accessories",
+      shape: "rounded-[20px] md:rounded-tr-[142px] md:rounded-bl-[195px] md:mt-10",
+      name: "Bathroom Set 1",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Dining area with round table and chairs",
+      src: "/collections/Bathroom 3.jpg",
+      alt: "Bathroom with modern fixtures",
       shape: "rounded-[20px] md:rounded-tl-[115px] md:rounded-br-[163px]",
-      name: "Modern Round Dining Set",
-      cost: "799.99"
+      name: "Bathroom Set 3",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Close-up of blue chairs and rug",
-      shape: "rounded-[20px] md:rounded-tr-[178px] md:rounded-bl-[89px]",
-      name: "Blue Accent Chair",
-      cost: "249.99"
+      src: "/collections/BATHROOM.jpg",
+      alt: "Luxury bathroom setup",
+      shape: "rounded-[20px] md:rounded-tr-[178px] md:rounded-bl-[89px] md:mt-12",
+      name: "Bathroom Setup",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Bedroom interior with bed and circular wall art",
+      src: "/collections/BED WITH SIDE TABLE 1.jpg",
+      alt: "Bedroom with bed and side table",
       shape: "rounded-[20px] md:rounded-tl-[152px] md:rounded-br-[134px]",
-      name: "Circular Wall Art Bedroom Set",
-      cost: "1,299.99"
+      name: "Bed with Side Table 1",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Close-up of table corner with blue item",
-      shape: "rounded-[20px] md:rounded-[180px]",
-      name: "Blue Accent Table Decor",
-      cost: "59.99"
+      src: "/collections/BED WITH SIDE TABLE 3.jpg",
+      alt: "Bedroom corner with bed and table",
+      shape: "rounded-[20px] md:rounded-[180px] max-h-[600px]",
+      name: "Bed with Side Table 3",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Bedroom interior with bed and circular wall art",
+      src: "/collections/CONSOLE TABLE 1.jpg",
+      alt: "Console table with decorative items",
       shape: "rounded-[20px] md:rounded-tl-[140px] md:rounded-br-[110px]",
-      name: "Minimalist Bedroom Set",
-      cost: "1,499.99"
+      name: "Console Table 1",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Living room with a cozy sofa and lamp",
+      src: "/collections/CONSOLE TABLE 2.jpg",
+      alt: "Stylish console table",
       shape: "rounded-[20px] md:rounded-tr-[105px] md:rounded-bl-[120px]",
-      name: "Cozy Living Room Sofa Set",
-      cost: "1,799.99"
+      name: "Console Table 2",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Modern kitchen with sleek countertops",
+      src: "/collections/DIning living.jpg",
+      alt: "Dining and living room space",
       shape: "rounded-[20px] md:rounded-tl-[170px] md:rounded-br-[150px]",
-      name: "Sleek Modern Kitchen Suite",
-      cost: "3,999.99"
+      name: "Dining Living Room Set",
+      cost: null
     },
     {
-      src: "/item.jpg",
-      alt: "Outdoor patio with seating and plants",
+      src: "/collections/Dining room 1.jpg",
+      alt: "Dining room with table and chairs",
       shape: "rounded-[20px] md:rounded-tr-[128px] md:rounded-bl-[97px]",
-      name: "Outdoor Patio Oasis Set",
-      cost: "2,499.99"
-    }
+      name: "Dining Room Set 1",
+      cost: null
+    },
+    // Continue updating the rest of the items in the same structure
   ];
 
   if (!hydrated) {
@@ -147,7 +148,7 @@ const ItemCollection = () => {
             />
             <div className=" absolute top-0 w-full h-full flex flex-col justify-center items-center bg-black bg-transparent text-white text-center cabin-light uppercase p-2">
                 <h3 className="text-xl font-light tracking-widest ">{item.name}</h3>
-                <p className="text-base tracking-wider">&#x20b9; {item.cost}</p>
+                <p className="text-base tracking-wider"> {item.cost}</p>
               </div>
           </div>
         ))}
