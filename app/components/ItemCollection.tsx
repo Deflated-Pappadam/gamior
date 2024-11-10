@@ -125,7 +125,7 @@ const ItemCollection = () => {
         Exclusive
       </h2>
       <h1 className="cabin-medium mb-8 text-[26px] uppercase tracking-widest text-[#1c1c1c]">
-        Onam Packages
+        Christmas Packages
       </h1>
      <div className="w-full h-full md:flex hidden justify-center items-center">
      <Masonry

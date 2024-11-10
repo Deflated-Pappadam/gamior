@@ -53,16 +53,6 @@ function Carousal() {
       <SwiperSlide>
         <Image
           alt=""
-          src={`/carousal2.jpg`}
-          width={1080}
-          height={1080}
-          className="w-full  "
-        />
-        <div className="to-tranparent absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-[#131313da]" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Image
-          alt=""
           src={`/carousal3.jpg`}
           width={1080}
           height={1080}
