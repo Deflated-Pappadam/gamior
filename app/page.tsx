@@ -8,8 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/effect-creative";
-
-import { clashGrotesk } from "./lib/fonts";
 import "./styles.css";
 import Carousal from "./components/Carousal";
 import { CounterSection } from "./components/TrustedSection";
