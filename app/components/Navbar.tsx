@@ -19,13 +19,13 @@ const Navbar = () => {
         <h1 className="uppercase tracking-wide text-white md:text-base text-xs p-2 cabin-light ">All kerala Free shipping </h1>
       </div>
       <div className="z-10 flex w-full items-center justify-between bg-[#FFFFFF4D] px-4 md:px-16 py-5 text-black">
-        <Image src="/logo.png" width={100} height={50} alt="Logo" />
+        <a href='/' ><Image src="/logo.png" width={100} height={50} alt="Logo" /></a>
         <div className="hidden items-center justify-between gap-8 text-[14px] md:flex">
-          <MenuItem label="Home" />
-          <MenuItem label="Collections" />
-          <MenuItem label="Catalogue" />
-          <MenuItem label="About Us" />
-          <MenuItem label="Contact" />
+          <MenuItem label="Home" link="/#"/>
+          <MenuItem label="Collections" link="/collections"/>
+          <MenuItem label="Catalogue" link="/#treding"/>
+          <MenuItem label="About Us" link="/#aboutus"/>
+          <MenuItem label="Contact" link="/#footer"/>
         </div>
         <div className="md:hidden flex items-center">
           <button 
@@ -64,13 +64,13 @@ const Navbar = () => {
   );
 };
 
-const MenuItem = ({ label }: {label: string}) => (
-  <div className="group relative inline-block hover:cursor-pointer">
+const MenuItem = ({ label ,link }: {label: string,link:string}) => (
+  <a href={link} className="group relative inline-block hover:cursor-pointer">
     <div className="font-sans uppercase tracking-wider text-[#1c1c1c] transition-all">
       {label}
     </div>
     <span className="absolute left-0 top-6 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
-  </div>
+  </a >
 );
 
 export default Navbar;

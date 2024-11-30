@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import CollectionItem from "./_components/CollectionItem";
+import Navbar from "../components/Navbar";
 
 const items = [
   { id: 1, name: "Bathroom", image: "/collections/BATHROOM 1.jpg", category: "bathroom" },
@@ -85,6 +86,7 @@ function CollectionsContent() {
   return (
     <>
       <div className="w-full mb-6 bg-[#efefef]">
+       
         {/* Mobile Dropdown */}
         <div className="sm:hidden">
           <select
@@ -149,11 +151,15 @@ function CollectionsContent() {
 
 export default function Collections() {
   return (
-    <div className="flex h-full min-h-screen flex-col items-center px-5 md:px-20 py-8 bg-[#efefef]">
+   <div className="flex flex-col h-full w-full  bg-[#efefef]">
+     <Navbar/>
+     <div className="flex h-full w-full min-h-screen flex-col items-center px-5 md:px-20 py-8 bg-[#efefef]">
+      
       <h1 className="w-full mb-6 text-3xl font-bold text-black cabin-light">Our Collection</h1>
       <Suspense fallback={<div>Loading...</div>}>
         <CollectionsContent />
       </Suspense>
     </div>
+   </div>
   );
 }
