@@ -38,8 +38,12 @@ export default function Home() {
       <section id="collection" className="">
         <Collection />
       </section>
-
-      <Footer/>
+      <section
+        id="footer"
+        className="flex w-full flex-col items-center justify-center bg-[#efefef]"
+      >
+        <Footer />
+      </section>
     </main>
   );
 }

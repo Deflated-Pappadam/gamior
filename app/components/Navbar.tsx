@@ -5,13 +5,11 @@ import { ChevronRight } from 'lucide-react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems = [
-    { label: 'HOME', hasSubmenu: false },
-    { label: 'COLLECTIONS', hasSubmenu: true },
-    { label: 'FURNITURE', hasSubmenu: true },
-    { label: 'PROJECTS', hasSubmenu: false },
-    { label: 'CATALOGUE', hasSubmenu: true },
-    { label: 'ABOUT US', hasSubmenu: false },
-    { label: 'CONTACT', hasSubmenu: false },
+    { label: 'HOME', hasSubmenu: false ,link:'/'},
+    { label: 'COLLECTIONS', hasSubmenu: true ,link:'/collections'},
+    { label: 'CATALOGUE', hasSubmenu: false,link:'/#trending' },
+    { label: 'ABOUT US', hasSubmenu: false,link:'/#aboutus' },
+    { label: 'CONTACT', hasSubmenu: false ,link:'/#footer'},
   ];
   return (
     <div>
@@ -23,7 +21,7 @@ const Navbar = () => {
         <div className="hidden items-center justify-between gap-8 text-[14px] md:flex">
           <MenuItem label="Home" link="/#"/>
           <MenuItem label="Collections" link="/collections"/>
-          <MenuItem label="Catalogue" link="/#treding"/>
+          <MenuItem label="Catalogue" link="/#trending"/>
           <MenuItem label="About Us" link="/#aboutus"/>
           <MenuItem label="Contact" link="/#footer"/>
         </div>
@@ -52,10 +50,10 @@ const Navbar = () => {
           </div>
           <div className="p-4">
             {menuItems.map((item, index) => (
-              <div key={index} className="py-4 border-b flex justify-between items-center text-black">
+              <a href= {item.link}key={index} className="py-4 border-b flex justify-between items-center text-black">
                 <span>{item.label}</span>
                 {item.hasSubmenu && <ChevronRight size={20} />}
-              </div>
+              </a>
             ))}
           </div>
         </div>
