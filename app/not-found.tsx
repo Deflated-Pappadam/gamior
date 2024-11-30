@@ -20,7 +20,7 @@ export default function NotFound() {
         </div>
 
         <p className="mt-4 text-base text-gray-600">
-          "Oops! Looks like you've taken a wrong turn."
+          Oops! Looks like you`ve taken a wrong turn.
         </p>
 
         <a href="/">
