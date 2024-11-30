@@ -63,7 +63,7 @@ function Carousal() {
       <SwiperSlide>
         <Image
           alt=""
-          src={`/carousal2.jpg`}
+          src={`/carousal.jpg`}
           width={1080}
           height={1080}
           className="w-full  "
