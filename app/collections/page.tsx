@@ -105,7 +105,7 @@ function CollectionsContent() {
             <Link
               key={cat}
               href={`${pathname}?${createQueryString('category', cat)}`}
-              className={`px-4 py-2 rounded-full ${
+              className={`px-6 py-2 rounded-md ${
                 category === cat
                   ? 'bg-gray-800 text-white'
                   : 'bg-gray-200 text-gray-800'
