@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
   return (
     <div>
-      <div className="flex h-fit md:h-[4vh] w-full items-center justify-center bg-[#1D1D1D]">
-        <h1 className="uppercase tracking-wide text-white md:text-base text-xs p-2 ">All kerala Free shipping </h1>
+      <div className="flex h-fit md:h-[4vh] w-full items-center justify-center bg-black">
+        <h1 className="uppercase tracking-wide text-white md:text-base text-xs p-2 cabin-light ">All kerala Free shipping </h1>
       </div>
       <div className="z-10 flex w-full items-center justify-between bg-[#FFFFFF4D] px-4 md:px-16 py-5 text-black">
         <Image src="/logo.png" width={100} height={50} alt="Logo" />

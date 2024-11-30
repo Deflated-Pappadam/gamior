@@ -22,21 +22,21 @@ function Carousal() {
       autoplay={true}
       loop={true}
       speed={1000}
-      effect={"creative"}
-      creativeEffect={{
-        prev: {
-          shadow: true,
-          translate: ["-20%", 0, -1],
-          opacity: 0.5
-        },
-        next: {
-          shadow: true,
-          translate: ["20%", 0, -1],
-          opacity: 0.5,
-          scale: 0.9
-        }
-      }}
-      className="mySwiper max-h-[86vh]"
+      effect={"slide"}
+      // creativeEffect={{
+      //   prev: {
+      //     shadow: true,
+      //     translate: ["-20%", 0, -1],
+      //     opacity: 0.5
+      //   },
+      //   next: {
+      //     shadow: true,
+      //     translate: ["20%", 0, -1],
+      //     opacity: 0.5,
+      //     scale: 0.9
+      //   }
+      // }}
+      className="mySwiper max-h-[40vh] md:max-h-[86vh] object-contain"
       pagination={{ clickable: true }}
       modules={[Autoplay, Pagination, Navigation, EffectCreative]}
     >
