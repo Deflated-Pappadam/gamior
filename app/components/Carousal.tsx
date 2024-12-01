@@ -36,7 +36,7 @@ function Carousal() {
       //     scale: 0.9
       //   }
       // }}
-      className="mySwiper max-h-[40vh] md:max-h-[86vh] object-contain"
+      className="mySwiper max-h-[40vh] md:max-h-[95vh] object-contain"
       pagination={{ clickable: true }}
       modules={[Autoplay, Pagination, Navigation, EffectCreative]}
     >
@@ -64,6 +64,16 @@ function Carousal() {
         <Image
           alt=""
           src={`/carousal.jpg`}
+          width={1080}
+          height={1080}
+          className="w-full  "
+        />
+        <div className="to-tranparent absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-[#131313da]" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image
+          alt=""
+          src={`/carousal3.jpg`}
           width={1080}
           height={1080}
           className="w-full  "

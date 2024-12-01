@@ -100,7 +100,7 @@ const Footer = () => {
       {/* Footer Note */}
       <div className="mt-8 text-center text-sm">
         <p>© 2024 GAMIOR</p>
-        <p>Deflated Pappadam</p>
+        <p className="pt-2">Made by <a href="mailto:deflatedpappadam@gmail.com" className="hover:text-blue-400 transition-all">`Deflated Pappadam</a> `</p>
       </div>
     </div>
     </div>

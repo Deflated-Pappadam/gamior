@@ -19,7 +19,7 @@ export default function Home() {
     <main className="flex h-full min-h-screen w-full flex-col bg-[#efefef]">
       <Navbar />
 
-      <section id="home-carousal">
+      <section id="home-carousal" className="">
         <Carousal />
       </section>
 
