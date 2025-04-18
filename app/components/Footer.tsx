@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Offline Store Section */}
         <div className="space-y-4">
           <h3 className="text-sm font-medium uppercase">Physical Stores</h3>
-          <button className="border-b border-black text-sm">Locate Store</button>
+          <a href="" className="border-b border-black text-sm">Locate Store</a>
         </div>
 
         {/* Get To Know Us Section */}
@@ -52,35 +52,18 @@ const Footer = () => {
             </p>
             <p>
               Instagram:{" "}
-              <a href="https://instagram.com/gamior.official" className="hover:underline">
-                @gamior.official
+              <a href="https://instagram.com/gamior_germaninterio" className="hover:underline">
+                @gamior_germaninterio
               </a>
             </p>
           </div>
         </div>
       </div>
 
-      {/* Newsletter Section */}
-      <div className="mt-12 space-y-4">
-        <h3 className="text-sm font-medium uppercase">Join the Community</h3>
-        <p className="text-sm">
-          Subscribe to receive updates about new releases, exclusive deals, and gaming tips!
-        </p>
-        <div className="flex max-w-md">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="flex-1 border-b border-black p-2 text-sm focus:outline-none"
-          />
-          <button className="p-2">
-            <Mail className="h-5 w-5" />
-          </button>
-        </div>
-      </div>
-
+     
       {/* Social Links */}
       <div className="mt-8 flex space-x-4">
-        <a href="#" className="hover:opacity-80">
+        <a href="https://instagram.com/gamior_germaninterio" className="hover:opacity-80">
           <Instagram className="h-5 w-5" />
         </a>
         <a href="#" className="hover:opacity-80">
@@ -100,7 +83,7 @@ const Footer = () => {
       {/* Footer Note */}
       <div className="mt-8 text-center text-sm">
         <p>© 2024 GAMIOR</p>
-        <p className="pt-2">Made by <a href="mailto:deflatedpappadam@gmail.com" className="hover:text-blue-400 transition-all">`Deflated Pappadam</a> `</p>
+        <p className="pt-2">Crafted by<a href="mailto:deflatedpappadam@gmail.com" className="hover:text-blue-400 transition-all">`Deflated Pappadam</a> `</p>
       </div>
     </div>
     </div>

@@ -7,7 +7,7 @@ export default function NotFound() {
     <div className="flex min-h-screen flex-col justify-between bg-[#f8f5f2]">
       <Navbar />
 
-      <main className="flex-grow flex flex-col items-center justify-center text-center min-h-[80vh] ">
+      <main className="flex-grow flex flex-col items-center justify-center text-center min-h-screen ">
         <h1 className="text-lg font-semibold text-gray-600">OH THIS IS AWKWARD!</h1>
         <h2 className="mt-2 text-4xl font-bold text-gray-800">Page Not Found</h2>
 
